@@ -1,33 +1,46 @@
 
 
-/*
-crare giochino fizz buzz fiiz-buzz
-
-*/
-
 // Ciclo fizz buzz
+    fbz = document.getElementById("fbz");
 
-for (let i = 1; i < 101; i++) {
-
-    
-    
-    if (i % 15 == 0 ) {
-        console.log("FizzBuzz");
-    } 
+// ciclo 100 numeri
+    for (let i = 1; i < 101; i++) {
         
-     else if (i % 3 == 0){
-        console.log("Fizz");
-     }
+        let newElement = document.createElement('div');
 
-     else if(i% 5 == 0){
+        // condizione divisibilità per 3 e per 5
+        if (i % 15 == 0 ) {
+            newElement.className = "fizzbuzz"
+            newElement.textContent = "fizzBuzz";
+        } 
+        
+        // condizione divisibilità per 3
+         else if (i % 3 == 0){
+            newElement.textContent = "Fizz";
+            newElement.className = "fizz"
+         }
+    
+        //  condizione divisibilità per 5
+         else if(i% 5 == 0){
+    
+            newElement.textContent = "Buzz";
+            newElement.className = "buzz"
+         }
+    
+        //  condizioni restanti
+         else{
+            
+            newElement.textContent = i;
+         }
 
-        console.log("Buzz");
-     }
+         //inserisco l'elemento in coda al contenitore #fbz
+        fbz.append(newElement);
+        
 
-     else{
+    };
 
-        console.log(i)
-     }
- 
-};
+
+
+
+
 

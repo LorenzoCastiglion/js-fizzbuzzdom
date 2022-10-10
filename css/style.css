@@ -1,0 +1,37 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+    
+
+div:not(#fbz){
+    border: 1px solid black;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;   
+    margin: 3px; 
+}
+
+
+.fizz{
+    background-color: #e09f3e;
+}
+
+.buzz{
+    background-color: #9e2a2b;
+    
+}
+
+.fizzbuzz{
+    background-color: #fff3b0;
+    
+}
+
